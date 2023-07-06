@@ -52,11 +52,11 @@ function JokesCard({categorie}) {
       <Card sx={{ maxWidth: 345,width:300,borderRadius:2,margin:3}} onClick={() => {openModal(); fetchJokes()}}>
         <CardActionArea>
           <CardContent sx={{textAlign:"center",color:"blue",}}>
-            <Typography gutterBottom variant="h4" component="div">
+            <Typography gutterBottom variant="h4" component="div" >
              {categorie.charAt(0).toUpperCase()+categorie.slice(1)}
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              Unlimeted Jokes On {categorie}
+              Unlimeted Jokes On {categorie.charAt(0).toUpperCase()+categorie.slice(1)}
             </Typography>
           </CardContent>
         </CardActionArea>
